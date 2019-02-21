@@ -1,0 +1,18 @@
+import random
+class chatbot:
+    def __init__(self, theGreating, theGoodBye):
+        self.great=theGreating
+        self.bye=theGoodBye
+    def myanswer(self, text):
+        if text=='hi' or text=='hello' or text=='hey':
+            index=random.randint(0,len(self.great)-1)
+            print(self.great[index])
+        elif text=='bye' or text=='goodbye':
+            index=random.randint(0,len(self.bye)-1)
+            print(self.bye[index])
+
+Mybot=chatbot(['Hey, how are you?','Hi','Hello'],['Oh, you have to go? Bye','bye-bye','see you'])
+
+while True:
+    text=input()
+    Mybot.myanswer(text)

@@ -1,0 +1,21 @@
+import random
+class Chatbot:
+    def __init__(self,theQuestion,theAnswer):
+        self.question=theQuestion
+        self.answer=theAnswer
+    def askQuestion(self):
+        index = random.randint(0,len(self.question)-1)
+        print(self.question[index])
+    def answerQuest(self):
+        index = random.randint(0,len(self.answer)-1)
+        print(self.answer[index])
+        
+            
+Mybot1=Chatbot(['will you do hw?','have you done homework?','can we meet?'],['i am cooking','i am working'])
+Mybot2=Chatbot(['I am doing hw now, what about you?'],['yes of course','))','may be','noo('])
+
+
+Mybot1.askQuestion()
+Mybot2.answerQuest()
+Mybot2.askQuestion()
+Mybot1.answerQuest()
