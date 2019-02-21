@@ -1,0 +1,22 @@
+def classify(person):
+    if person.height>168 and person.weight>65 and person.hairdlina<30:
+        print('Male')
+    else:
+        print('Female')
+
+class Person:
+    def __init__(self, theHeight, theWeight, theHairDlina):
+        self.height=theHeight
+        self.weight=theWeight
+        self.hairdlina=theHairDlina
+
+Person1=Person(170,70,40)
+Person2=Person(150,85,0)
+Person3=Person(185,90,15)
+Person4=Person(100,100,60)
+
+
+classify(Person1)
+classify(Person2)
+classify(Person3)
+classify(Person4)
